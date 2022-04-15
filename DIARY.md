@@ -1,5 +1,32 @@
 # Diary
 
+## Week 4
+### Overview
+Fixed the issue with the new kernels (5.15,5.16,5.17), also tried several micro artificial benchmark in order to analyze AMD governor setup behaviour.
+
+### Done
+- Fixed issue with new kernels (error in configuration file)
+- Update reboot kernel script in order to be able to boot with the new AMD P-State driver (Kernel 5.17 only)
+- Benchmark dacapo done with Kernel 5.9 (with cpu usage), few observations needs to be investigated
+  - AMD run at high frequency most of the time
+  - Some benchmark run at a lower frequency with NEST (which doesn't happen on Intel machines) but they still have better performances
+  - Seems like schedutil and performance give the same results (AMD specifics or error in benchmarking method ?)
+- Artificial benchmark done, cpu governor setup understood
+- Started writing of a recap document for each observation linked to AMD machines
+- Benchmark configure (only a few) done with all new kernels, few observations needs to be investigated
+  - Performance decrease since Kernel 5.16
+  - No difference between amd-pstate driver and regular acpi-controller driver
+- Modification on ocaml scripts done
+- Artificial benchmarks upgraded and given with a few scripts
+- Installation and learning of new tools "stepper" and "count_occurency"
+- Presentation of Arachne paper done
+
+### TODO
+- Run dacapo benchmark with new kernels
+- Study observations done last week
+- Prepare phoronix benchmark for neowise machines
+- Complete recap document
+
 ## Week 3
 ### Overview
 Eurosys'22 week.
