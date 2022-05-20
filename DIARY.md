@@ -1,5 +1,32 @@
 # Diary
 
+## Week 7-8-9
+### Overview
+During those 3 weeks I've been finishing the study of the newest Linux kernels (5.15,5.16,5.17) and I've been starting to look at virtualization.
+Also a new machine was released on Grid'5000 (sirius) which has a new hardware layout (2 sockets, clusters of 4 cores, new topology level) so I've been running experiments on it.
+
+### Done
+- Conclude on governors that they are indeed working but due to the fact that AMD machines run easily at high frequency, the performance governor isn't very useful
+- Linux Kernel 5.16 issue resolved : Configuration issue, an option was turned off which was normally inlining some code in order to make the kernel more efficient
+- Finised setting up phoronix benchmark and automating it.
+- Runned some phoronix benchmarks
+- Gather final results for neowise machines (nas, configure, dacapo), currently doing it for phoronix
+- Currently establishing new experiments and choosing experiences useful in order to study the hardware of a machine (will establish a methodology)
+- Discovered and explored new machine, sirius. Explored topology, runned configure and nas benchmark on it (interesting results).
+- Added syscall to Linux debug kernel in order to print scheduling domain information for neowise and sirius machine
+- Started to look at virtualization and setting it up (scripts to automate the deployment, etc...)
+- Still studying hyperthreading on AMD machines and comparison done with dahu machines (Intel) in order to determine if hyperthreading should be used by AMD machines
+
+### TODO
+- Run phoronix benchmark on neowise (this weekend)
+- Run dacapo benchmark on sirius
+- Deploy a VM and run some benchmark on it
+- Keep studying AMD hardware
+- Establish a methodology to determine how the hardware work (which experiments to run, what information should we look for, etc...)
+- Update recap document
+
+### Done
+
 ## Week 5-6
 ### Overview
 Most of the two weeks were focused on a lot of code reading.
