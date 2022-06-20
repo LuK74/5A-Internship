@@ -1,5 +1,28 @@
 # Diary
 
+## Week 10-11-12-13
+### Overview
+During those 4 weeks (which included Kernel Recipes conferences and some vacations days) I have been doing a lot of manipulation on KVM in order to learn how it works.
+
+### Done
+- Finished to learn and master KVM and tools basic and advanced usage (qemu, libvirt, libguestfs, trace-cmd, etc...)
+- Finished to setup scripts, tools and configurations files for launching workings VMs on neowise machines (severals bugs and issues encountered which needed to be studied)
+- Creation and edition of new images (VM and G5K images, to compare baremetal and VM)
+- Ran some benchmarks to compare VM and benchmark (one interesting case that needs to be studied, and some differences with Intel machines)
+- Presentation done on one of Eurosys 22 papers (Slashing the disaggregation tax in heterogeneous data centers with FractOS)
+- Spend some time trying to fix an issue on sirius machine (which seems to have been a G5K issue since it has been fixed after two days of admin maintenance on sirius machines)
+- Attended kernel recipes conferences
+- Started to wrote a document about my experiences with KVM virtualization (bugs encountered, solutions, etc...)
+- Started to wrote a document about how to know a few specifics of the hardware we're using
+
+### TODO
+- Continue to run benchmarks and neowise baremetal and VM
+- Start to run benchmarks and sirius machines
+- Run same experiments on Intel machines to observe differences in behaviour
+- Finish the document about how to know a few specifics of the hardware we're using
+- Get back into phoronix benchmarks
+- Do a clean of AMD observations
+
 ## Week 7-8-9
 ### Overview
 During those 3 weeks I've been finishing the study of the newest Linux kernels (5.15,5.16,5.17) and I've been starting to look at virtualization.
